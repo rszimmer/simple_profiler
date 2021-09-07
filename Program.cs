@@ -50,27 +50,3 @@ namespace Simple
         
     }
 }
-
-// class SimpleProfiler {
-
-//             public Stopwatch time;
-//             public List<ProfilerInfo> listinha;
-//             public SimpleProfiler() {
-//                 this.time = new Stopwatch();
-//                 this.listinha = new List<ProfilerInfo>();
-//                 this.time.Start();
-//             }
-// }
-
-// struct ProfilerInfo {
-//     public TimeSpan time;
-//     public string id;
-//     public int inout;
-
-//     public ProfilerInfo(TimeSpan time, string id, int inout) {
-//         this.time = time;
-//         this.id = id;
-//         this.inout = inout;
-
-//     }
-// }
