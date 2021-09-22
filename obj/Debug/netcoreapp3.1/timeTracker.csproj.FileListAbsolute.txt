@@ -1,0 +1,15 @@
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.csprojAssemblyReference.cache
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.csproj.CoreCompileInputs.cache
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.AssemblyInfoInputs.cache
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.AssemblyInfo.cs
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\timeTracker.exe
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\timeTracker.deps.json
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\timeTracker.runtimeconfig.json
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\timeTracker.runtimeconfig.dev.json
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\timeTracker.dll
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\timeTracker.pdb
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.dll
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.pdb
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.genruntimeconfig.cache
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\rszim\Documents\profiler\simple_profiler\timeTracker\obj\Debug\netcoreapp3.1\timeTracker.csproj.CopyComplete

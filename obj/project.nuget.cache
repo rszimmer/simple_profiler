@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jg/h86gH/CBoQ6HS536qxXp/E6cIKxWeNgiiy+9bzyH+U4Q0RYPiAOyZM1fOZ5At0JZVx1cq9Zssnnu/bdYxNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rszim\\Documents\\profiler\\simple_profiler\\timeTracker\\timeTracker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rszim\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512",
+    "C:\\Users\\rszim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
