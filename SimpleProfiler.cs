@@ -17,10 +17,20 @@ namespace timeTracker {
                     this.list = new List<ProfilerInfo>();
                 }
 
+                //Faz a primeira marcação de tempo (início)
+                public void Start(string id) {
+                    this.time.AddLap("start"+id);                    
+                }
+                
+                //Faz a segunda marcação de tempo (fim)
                 //Adiciona os elementos na lista
-                public void Add(string id, int inout, TimeFormat format = TimeFormat.Milliseconds) {
+                //Se não houver um inicio, considera o tempo decorrido desde a instancia do profiler
+                public void End(string id, int inout, TimeFormat format = TimeFormat.Milliseconds) {
+                    string start;
+                    if(this.time.CheckLapNames("start"+id)) start = "start"+id;
+                    else start = "start";
                     this.time.AddLap(id);
-                    var profiler = new ProfilerInfo {id = id, time = this.time.GetLapTimeDiff("start", id, format), inout = inout};
+                    var profiler = new ProfilerInfo {id = id, time = this.time.GetLapTimeDiff(start, id, format), inout = inout};
                     this.list.Add(profiler);
                 }
                 
@@ -63,7 +73,8 @@ namespace timeTracker {
                 public int Size {
                     get {return this.list.Count;}
                 }
-
+                
+                //Insere todas as informações em um csv
                 public void toCSV () {
                     var records = this.list;
                     var csvPath = Path.Combine(Environment.CurrentDirectory, $"profiler-{DateTime.Now.ToFileTime()}.csv");
@@ -75,17 +86,4 @@ namespace timeTracker {
                     }
                 }
     }
-
-    // struct ProfilerInfo {
-    //     public decimal time;
-    //     public string id;
-    //     public int inout;
-
-    //     public ProfilerInfo(decimal time, string id, int inout) {
-    //         this.time = time;
-    //         this.id = id;
-    //         this.inout = inout;
-
-    //     }
-    // }
 }

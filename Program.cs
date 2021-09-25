@@ -1,4 +1,9 @@
-﻿using System;
+﻿//Programa de teste para o Profiler
+//id 1: Conta desde que o profiler foi instanciado
+//id 2: Conta desde um início determinado
+//id 3: Conta desde um início determinado (aninhado com id 2)
+
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using static timeTracker.TimeTracker;
@@ -11,16 +16,15 @@ namespace timeTracker
         static void Main(string[] args)
         {
             SimpleProfiler profiler = new SimpleProfiler();
-            //TimeTracker tt = new TimeTracker("start");
             Thread.Sleep(10300);
-            //tt.AddLap("myLap1");
-            //Console.WriteLine(tt.GetLapTimeDiff("start", "myLap1"));
-            profiler.Add("1", 100, TimeFormat.Seconds);
+            profiler.End("1", 100.2900);
             Thread.Sleep(1000);
-            profiler.Add("2", 200, TimeFormat.Seconds);
-            Thread.Sleep(200);
-            profiler.Add("3", 300, TimeFormat.Seconds);
-            Console.WriteLine(profiler.Size);
+            profiler.Start("2");
+            Thread.Sleep(103);
+            profiler.Start("3");
+            profiler.End("2", 200);
+            Thread.Sleep(1036);
+            profiler.End("3", 300);
             profiler.toCSV();
         }
     }

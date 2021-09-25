@@ -85,9 +85,10 @@ namespace timeTracker
         /// Protected method to check if given lap name exists.
         /// </summary>
         /// <param name="lapNames"></param>
-        protected void CheckLapNames(params string[] lapNames)
+        public bool CheckLapNames(params string[] lapNames)
         {
-            foreach (string n in lapNames) if (!TrackList.ContainsKey(n)) throw new Exception(String.Format("Lap '{0}' cannot be found.", n));
+            foreach (string n in lapNames) if (!TrackList.ContainsKey(n)) return false;
+            return true;
         }
         #endregion Methods
 
