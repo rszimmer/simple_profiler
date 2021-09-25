@@ -24,7 +24,7 @@ namespace timeTracker {
                 
                 //Faz a segunda marcação de tempo (fim)
                 //Adiciona os elementos na lista
-                //Se não houver um inicio, considera o tempo decorrido desde a instancia do profiler
+                //Se não houver um inicio, considera o tempo decorrido desde a instanciação do profiler
                 public void End(string id, int inout, TimeFormat format = TimeFormat.Milliseconds) {
                     string start;
                     if(this.time.CheckLapNames("start"+id)) start = "start"+id;
